@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>志愿模拟</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/volunteer.js"></script>
+</head>
+<body>
+    <p>成绩:<input type="text" id="grade"></p>
+    <p>省份:<select name="province" id="province">
+        <option value="11">北京</option>
+        <option value="12">天津</option>
+        <option value="13">河北</option>
+        <option value="14">山西</option>
+        <option value="15">内蒙古</option>
+        <option value="21">辽宁</option>
+        <option value="22">吉林</option>
+        <option value="23">黑龙江</option>
+        <option value="31">上海</option>
+        <option value="32">江苏</option>
+        <option value="33">浙江</option>
+        <option value="34">安徽</option>
+        <option value="35">福建</option>
+        <option value="36">江西</option>
+        <option value="37">山东</option>
+        <option value="41">河南</option>
+        <option value="42">湖北</option>
+        <option value="43">湖南</option>
+        <option value="44">广东</option>
+        <option value="45">广西</option>
+        <option value="46">海南</option>
+        <option value="50">重庆</option>
+        <option value="51">四川</option>
+        <option value="52">贵州</option>
+        <option value="53">云南</option>
+        <option value="61">陕西</option>
+        <option value="62">甘肃</option>
+        <option value="63">青海</option>
+        <option value="64">宁夏</option>
+        <option value="65">新疆</option>
+        <option value="54">西藏</option>
+    </select></p>
+    <p><button onclick="student_info()">查询</button></p>
+    <div class="panel-group" id="accordion" style="display: none;">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" 
+                    href="#collapseOne">
+                    差不多
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body" id="chabuduo">
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" 
+                        href="#collapseTwo">
+                        有点悬
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in">
+                    <div class="panel-body" id="youdianxuan">
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" 
+                            href="#collapseThr">
+                            考不上
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThr" class="panel-collapse collapse in">
+                        <div class="panel-body" id="kaobushang">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p style="color:gray;"><font size="1">由于技术原因，志愿模拟不分文理，一般根据物理方向/理科进行分析，结果仅供参考，点击学校名称可跳转至相应学校的掌上高考主页</font></p>
+    
+    
+</body>
+</html>

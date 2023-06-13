@@ -1,0 +1,23 @@
+{
+  "id": "4000070",
+  "name": "DarkSun",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7550218",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "104273",
+      "name": "太阳",
+      "font_class": "taiyang",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    }
+  ]
+}

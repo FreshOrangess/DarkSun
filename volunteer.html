@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>志愿模拟</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/dropdown.js"></script>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/volunteer.js"></script>
 </head>
 <body>
-    <p>成绩:<input type="text" id="grade"></p>
+    <div class="header" id="header">
+        <ul>
+            <li><a href=""><i class="iconfont2">&#xe672;</i></a></li>
+            <li class="header2"><a href="ranking.php">成绩排行</a></li>
+            <li class="header2"><a href="grade_analysis_index.php">成绩分析</a></li>
+            <li class="header2"><a href="comparison.html">成绩对比</a></li>
+            <li class="header2"><a href="volunteer.html">志愿模拟</a></li>
+            <li class="header2"><a href="#">留言板</a></li>
+            <li class="header2"><a href="#">问题反馈</a></li>
+            <li id="dropdown-button" class="header1"><a href="#"><i class="iconfont" onclick="dropdown()">&#xe68c;</i></a></li>
+        </ul>
+    </div>
+    <div class="mydropdown" id = "mydropdown">
+        <ul>
+            <li class="dropdown-top"><a href="ranking.php">成绩排行</a></li>
+            <li class="dropdown-a"><a href="grade_analysis_index.php">成绩分析</a></li>
+            <li class="dropdown-a"><a href="comparison.html">成绩对比</a></li>
+            <li class="dropdown-a"><a href="volunteer.html">志愿模拟</a></li>
+            <li class="dropdown-a"><a href="#">留言板</a></li>
+            <li class="dropdown-a"><a href="#">问题反馈</a></li>
+        </ul>
+    </div>
+    <div class="top">
+        <p>成绩:<input type="text" id="grade"></p>
     <p>省份:<select name="province" id="province">
         <option value="11">北京</option>
         <option value="12">天津</option>
@@ -94,3 +120,5 @@
     
 </body>
 </html>
+    </div>
+    

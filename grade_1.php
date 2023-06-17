@@ -34,15 +34,20 @@
         </ul>
     </div>
     <div class="top">
-        <p><a href="grade_1.php">高一年级成绩表</a></p>
-        <p>黑太阳技术栈:</p>
-        <p><a href="https://jquery.com/">jQuery</a></p>
-        <p><a href="https://www.iconfont.cn/">iconfont-阿里巴巴矢量图标库</a></p>
-        <p><a href="https://www.php.net/">PHP</a></p>
-        <p><a href="https://www.mysql.com/cn/">MySql</a></p>
-        <p><a href="https://www.selenium.dev/zh-cn/">selenium</a></p>
-        <p><a href="https://openai.com">OpenAI</a></p>
-        <p>黑太阳主页为什么这么丑</p>
+    <p>因高一年级考号格式过于抽象,地球科技还不能将高一年级成绩进行分类,所以该表不分组合、班级</p><hr>
+    
+    <?php
+    $conn = new mysqli('mysql.sqlpub.com','freshoranges', '12fbdb4d335b0276');
+    $sql = "use grade_1";
+    $result = mysqli_query($conn,$sql);
+    $sql = "SELECT * FROM `2023年5月金太阳联考` ORDER BY 赋分总分 DESC";
+    $result = mysqli_query($conn,$sql);
+    $i = 1;
+    while($row = $result->fetch_assoc()) {
+        echo '排名:'.$i++. "\t姓名:".$row['姓名']."\t总分:".$row['总分']."\t".$row['subject_1'].$row['subject_1_grade']."\t".$row['subject_2'].$row['subject_2_grade']."\t".$row['subject_3'].$row['subject_3_grade']."\t".$row['subject_4'].$row['subject_4_grade']."\t".$row['subject_5'].$row['subject_5_grade']."\t".$row['subject_6'].$row['subject_6_grade']."</br><hr>";
+        
+    } 
+    ?>
     </div>
 </body>
 </html>
